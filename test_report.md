@@ -1,283 +1,279 @@
-﻿# BÃO CÃO KIá»‚M THá»¬ Há»† THá»NG
-# Thá»§y lá»£i Báº¿n Tre â€“ https://thuyloi.opengis.vn/
+# BÁO CÁO KIỂM THỬ HỆ THỐNG
+# Thủy lợi Bến Tre – https://thuyloi.opengis.vn/
 
 | | |
 |---|---|
-| **Há»‡ thá»‘ng kiá»ƒm thá»­** | Há»‡ thá»‘ng ThÃ´ng tin Thá»§y lá»£i Báº¿n Tre |
+| **Hệ thống kiểm thử** | Hệ thống Thông tin Thủy lợi Bến Tre |
 | **URL** | https://thuyloi.opengis.vn/ |
 | **Tester** | AI Tester (Antigravity IDE) |
-| **NgÃ y kiá»ƒm thá»­** | 15/06/2026 |
-| **TÃ i khoáº£n sá»­ dá»¥ng** | dtlong@vnsc.org.vn / dtlong |
-| **TrÃ¬nh duyá»‡t** | Google Chrome (Selenium Headless + Browser Subagent) |
-| **Káº¿t quáº£ tá»•ng quan** | âš ï¸ **3 lá»—i phÃ¡t hiá»‡n** / 8 test case |
+| **Ngày kiểm thử** | 15/06/2026 |
+| **Tài khoản sử dụng** | dtlong@vnsc.org.vn / dtlong |
+| **Trình duyệt** | Google Chrome (Selenium + Browser Subagent) |
+| **Kết quả tổng quan** | ⚠️ **3 lỗi phát hiện** / 8 test case |
 
 ---
 
-## I. Tá»”NG Káº¾T Káº¾T QUáº¢
+## I. TỔNG KẾT KẾT QUẢ
 
-| Chá»‰ sá»‘ | Sá»‘ lÆ°á»£ng |
+| Chỉ số | Số lượng |
 |--------|----------|
-| Tá»•ng sá»‘ test case | 8 |
-| âœ… Pass | 5 |
-| âš ï¸ Pass vá»›i cáº£nh bÃ¡o | 2 |
-| âŒ Fail | 1 |
+| Tổng số test case | 8 |
+| ✅ Pass | 5 |
+| ⚠️ Pass với cảnh báo | 2 |
+| ❌ Fail | 1 |
 
 ---
 
-## II. CHI TIáº¾T CÃC TEST CASE
+## II. CHI TIẾT CÁC TEST CASE
 
 ---
 
-### TC-001: Kiá»ƒm tra Trang Chá»§ (Homepage)
+### TC-001: Kiểm tra Trang Chủ (Homepage)
 
 | | |
 |---|---|
-| **Má»©c Ä‘á»™ Æ°u tiÃªn** | Medium |
-| **URL kiá»ƒm thá»­** | https://thuyloi.opengis.vn/ |
-| **Káº¿t quáº£** | âœ… **PASS** |
+| **Mức độ ưu tiên** | Medium |
+| **URL kiểm thử** | https://thuyloi.opengis.vn/ |
+| **Kết quả** | ✅ **PASS** |
 
-**MÃ´ táº£:** Kiá»ƒm tra trang chá»§ táº£i Ä‘Ãºng, hiá»ƒn thá»‹ tiÃªu Ä‘á», ná»™i dung giá»›i thiá»‡u vÃ  cÃ¡c liÃªn káº¿t Ä‘iá»u hÆ°á»›ng chÃ­nh.
+**Mô tả:** Kiểm tra trang chủ tải đúng, hiển thị tiêu đề, nội dung giới thiệu và các liên kết điều hướng chính.
 
-**CÃ¡c bÆ°á»›c thá»±c hiá»‡n:**
-1. Má»Ÿ trÃ¬nh duyá»‡t, Ä‘iá»u hÆ°á»›ng Ä‘áº¿n `https://thuyloi.opengis.vn/`
-2. Quan sÃ¡t tiÃªu Ä‘á» trang
-3. Kiá»ƒm tra ná»™i dung giá»›i thiá»‡u
-4. Kiá»ƒm tra cÃ¡c nÃºt Ä‘iá»u hÆ°á»›ng
+**Các bước thực hiện:**
+1. Mở trình duyệt, điều hướng đến `https://thuyloi.opengis.vn/`
+2. Quan sát tiêu đề trang
+3. Kiểm tra nội dung giới thiệu
+4. Kiểm tra các nút điều hướng
 
-**Káº¿t quáº£ thá»±c táº¿:**
-- âœ… Trang táº£i thÃ nh cÃ´ng
-- âœ… TiÃªu Ä‘á»: **"Thá»§y lá»£i Báº¿n Tre â€“ Há»‡ thá»‘ng thÃ´ng tin Thá»§y lá»£i"**
-- âœ… Ná»™i dung giá»›i thiá»‡u hiá»ƒn thá»‹ Ä‘áº§y Ä‘á»§ (mÃ´ táº£ há»‡ thá»‘ng, á»©ng dá»¥ng di Ä‘á»™ng, há»— trá»£ ra quyáº¿t Ä‘á»‹nh)
-- âœ… NÃºt **"XEM Báº¢N Äá»’"** hiá»ƒn thá»‹ vÃ  hoáº¡t Ä‘á»™ng
-- âœ… Footer hiá»ƒn thá»‹ thÃ´ng tin Ä‘Æ¡n vá»‹ chá»§ quáº£n
+**Kết quả thực tế:**
+- ✅ Trang tải thành công
+- ✅ Tiêu đề: **"Thủy lợi Bến Tre – Hệ thống thông tin Thủy lợi"**
+- ✅ Nội dung giới thiệu hiển thị đầy đủ (mô tả hệ thống, ứng dụng di động, hỗ trợ ra quyết định)
+- ✅ Nút **"XEM BẢN ĐỒ"** hiển thị và hoạt động
+- ✅ Footer hiển thị thông tin đơn vị chủ quản
 
-**áº¢nh mÃ n hÃ¬nh:**
+**Ảnh màn hình:**
 
-![Trang chá»§](screenshots/homepage_load_1781509217719.png)
+![Trang chủ](screenshots/homepage_load_1781509217719.png)
 
 ---
 
-### TC-002: Kiá»ƒm tra Giao Diá»‡n Form ÄÄƒng Nháº­p
+### TC-002: Kiểm tra Giao Diện Form Đăng Nhập
 
 | | |
 |---|---|
-| **Má»©c Ä‘á»™ Æ°u tiÃªn** | High |
-| **URL kiá»ƒm thá»­** | https://thuyloi.opengis.vn/map/login/ |
-| **Káº¿t quáº£** | âš ï¸ **PASS (cÃ³ cáº£nh bÃ¡o UX)** |
+| **Mức độ ưu tiên** | High |
+| **URL kiểm thử** | https://thuyloi.opengis.vn/map/login/ |
+| **Kết quả** | ⚠️ **PASS (có cảnh báo UX)** |
 
-**MÃ´ táº£:** Kiá»ƒm tra form Ä‘Äƒng nháº­p cÃ³ hiá»ƒn thá»‹ Ä‘Ãºng vÃ  Ä‘á»§ cÃ¡c trÆ°á»ng nháº­p liá»‡u cáº§n thiáº¿t.
+**Mô tả:** Kiểm tra form đăng nhập có hiển thị đúng và đủ các trường nhập liệu cần thiết.
 
-**CÃ¡c bÆ°á»›c thá»±c hiá»‡n:**
-1. Äiá»u hÆ°á»›ng Ä‘áº¿n trang Ä‘Äƒng nháº­p
-2. Quan sÃ¡t form Ä‘Äƒng nháº­p
+**Các bước thực hiện:**
+1. Điều hướng đến trang đăng nhập
+2. Quan sát form đăng nhập
 
-**Káº¿t quáº£ thá»±c táº¿:**
-- âœ… Trang Ä‘Äƒng nháº­p táº£i thÃ nh cÃ´ng
-- âš ï¸ **Form Ä‘Äƒng nháº­p bá»‹ áº©n máº·c Ä‘á»‹nh (collapsed/accordion)** â€“ ngÆ°á»i dÃ¹ng pháº£i click nÃºt mÅ©i tÃªn Ä‘á»ƒ má»Ÿ rá»™ng má»›i tháº¥y cÃ¡c Ã´ nháº­p liá»‡u
-- âœ… Sau khi má»Ÿ rá»™ng: cÃ¡c trÆ°á»ng Email, Máº­t kháº©u vÃ  nÃºt "ÄÄƒng nháº­p" hiá»ƒn thá»‹ Ä‘Ãºng
-- âœ… LiÃªn káº¿t "QuÃªn máº­t kháº©u?" hiá»ƒn thá»‹
+**Kết quả thực tế:**
+- ✅ Trang đăng nhập tải thành công
+- ⚠️ **Form đăng nhập bị ẩn mặc định (collapsed/accordion)** – người dùng phải click nút mũi tên để mở rộng mới thấy các ô nhập liệu
+- ✅ Sau khi mở rộng: các trường Email, Mật khẩu và nút "Đăng nhập" hiển thị đúng
+- ✅ Liên kết "Quên mật khẩu?" hiển thị
 
-> [!WARNING]
-> **Lá»—i UX-001**: Form Ä‘Äƒng nháº­p bá»‹ áº©n theo dáº¡ng Accordion. NgÆ°á»i dÃ¹ng má»›i cÃ³ thá»ƒ khÃ´ng biáº¿t pháº£i click Ä‘á»ƒ má»Ÿ rá»™ng, gÃ¢y nháº§m láº«n vÃ  giáº£m tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng.
+> **⚠️ Lỗi UX-001**: Form đăng nhập bị ẩn theo dạng Accordion. Người dùng mới có thể không biết phải click để mở rộng, gây nhầm lẫn và giảm trải nghiệm người dùng.
 
-**áº¢nh mÃ n hÃ¬nh:**
+**Ảnh màn hình:**
 
-![Trang Ä‘Äƒng nháº­p (form Ä‘ang Ä‘Ã³ng)](screenshots/login_page_load_1781509260873.png)
+![Trang đăng nhập - form đang đóng](screenshots/login_page_load_1781509260873.png)
 
-![Form Ä‘Äƒng nháº­p (sau khi má»Ÿ rá»™ng)](screenshots/login_form_visible_1781509273890.png)
+![Form đăng nhập - sau khi mở rộng](screenshots/login_form_visible_1781509273890.png)
 
 ---
 
-### TC-003: Kiá»ƒm tra Chá»©c nÄƒng ÄÄƒng Nháº­p
+### TC-003: Kiểm tra Chức năng Đăng Nhập
 
 | | |
 |---|---|
-| **Má»©c Ä‘á»™ Æ°u tiÃªn** | Critical |
-| **URL kiá»ƒm thá»­** | https://thuyloi.opengis.vn/map/login/ |
-| **Káº¿t quáº£** | âœ… **PASS** |
+| **Mức độ ưu tiên** | Critical |
+| **URL kiểm thử** | https://thuyloi.opengis.vn/map/login/ |
+| **Kết quả** | ✅ **PASS** |
 
-**MÃ´ táº£:** XÃ¡c minh há»‡ thá»‘ng cho phÃ©p Ä‘Äƒng nháº­p báº±ng tÃ i khoáº£n há»£p lá»‡.
+**Mô tả:** Xác minh hệ thống cho phép đăng nhập bằng tài khoản hợp lệ.
 
-**CÃ¡c bÆ°á»›c thá»±c hiá»‡n:**
-1. Má»Ÿ form Ä‘Äƒng nháº­p
-2. Nháº­p username: `dtlong@vnsc.org.vn`
-3. Nháº­p password: `dtlong`
-4. Click nÃºt "ÄÄƒng nháº­p"
-5. Kiá»ƒm tra káº¿t quáº£
+**Các bước thực hiện:**
+1. Mở form đăng nhập
+2. Nhập username: `dtlong@vnsc.org.vn`
+3. Nhập password: `dtlong`
+4. Click nút "Đăng nhập"
+5. Kiểm tra kết quả
 
-**Káº¿t quáº£ thá»±c táº¿:**
-- âœ… Nháº­p thÃ´ng tin Ä‘Äƒng nháº­p thÃ nh cÃ´ng
-- âœ… Há»‡ thá»‘ng xÃ¡c thá»±c vÃ  chuyá»ƒn hÆ°á»›ng Ä‘áº¿n trang báº£n Ä‘á»“: `https://thuyloi.opengis.vn/map/view/`
-- âœ… TÃªn ngÆ°á»i dÃ¹ng hiá»ƒn thá»‹: **"Äá»— ThÃ nh Long"** táº¡i gÃ³c trÃªn pháº£i
+**Kết quả thực tế:**
+- ✅ Nhập thông tin đăng nhập thành công
+- ✅ Hệ thống xác thực và chuyển hướng đến trang bản đồ: `https://thuyloi.opengis.vn/map/view/`
+- ✅ Tên người dùng hiển thị: **"Đỗ Thành Long"** tại góc trên phải
 
-**áº¢nh mÃ n hÃ¬nh:**
+**Ảnh màn hình:**
 
-![Äiá»n thÃ´ng tin Ä‘Äƒng nháº­p](screenshots/login_fields_filled_1781509291021.png)
+![Điền thông tin đăng nhập](screenshots/login_fields_filled_1781509291021.png)
 
 ---
 
-### TC-004: Kiá»ƒm tra Báº£n Äá»“ WebGIS sau ÄÄƒng Nháº­p
+### TC-004: Kiểm tra Bản Đồ WebGIS sau Đăng Nhập
 
 | | |
 |---|---|
-| **Má»©c Ä‘á»™ Æ°u tiÃªn** | Critical |
-| **URL kiá»ƒm thá»­** | https://thuyloi.opengis.vn/map/view/ |
-| **Káº¿t quáº£** | âš ï¸ **PASS (cÃ³ lá»—i tÃ i nguyÃªn)** |
+| **Mức độ ưu tiên** | Critical |
+| **URL kiểm thử** | https://thuyloi.opengis.vn/map/view/ |
+| **Kết quả** | ⚠️ **PASS (có lỗi tài nguyên)** |
 
-**MÃ´ táº£:** Kiá»ƒm tra báº£n Ä‘á»“ WebGIS táº£i Ä‘Ãºng sau khi Ä‘Äƒng nháº­p, cÃ¡c cÃ´ng cá»¥ báº£n Ä‘á»“ hoáº¡t Ä‘á»™ng bÃ¬nh thÆ°á»ng.
+**Mô tả:** Kiểm tra bản đồ WebGIS tải đúng sau khi đăng nhập, các công cụ bản đồ hoạt động bình thường.
 
-**CÃ¡c bÆ°á»›c thá»±c hiá»‡n:**
-1. Quan sÃ¡t giao diá»‡n báº£n Ä‘á»“ sau Ä‘Äƒng nháº­p
-2. Kiá»ƒm tra cÃ¡c cÃ´ng cá»¥ báº£n Ä‘á»“ (Zoom, Measure, Locate)
-3. Kiá»ƒm tra cÃ¡c lá»›p dá»¯ liá»‡u (Layers) trÃªn báº£n Ä‘á»“
-4. Xem console logs Ä‘á»ƒ phÃ¡t hiá»‡n lá»—i
+**Các bước thực hiện:**
+1. Quan sát giao diện bản đồ sau đăng nhập
+2. Kiểm tra các công cụ bản đồ (Zoom, Measure, Locate)
+3. Kiểm tra các lớp dữ liệu (Layers) trên bản đồ
+4. Xem console logs để phát hiện lỗi
 
-**Káº¿t quáº£ thá»±c táº¿:**
-- âœ… Báº£n Ä‘á»“ container táº£i thÃ nh cÃ´ng
-- âœ… CÃ´ng cá»¥ Zoom In, Zoom Out hiá»ƒn thá»‹ vÃ  hoáº¡t Ä‘á»™ng
-- âœ… CÃ´ng cá»¥ Äo lÆ°á»ng (Measure) vÃ  Äá»‹nh vá»‹ (Locate) hiá»ƒn thá»‹
-- âœ… ThÃ´ng tin ngÆ°á»i dÃ¹ng "Äá»— ThÃ nh Long" hiá»ƒn thá»‹ trÃªn thanh cÃ´ng cá»¥
-- âŒ **Lá»—i 404 WMS**: Khi báº£n Ä‘á»“ cá»‘ gáº¯ng táº£i lá»›p dá»¯ liá»‡u vÃ¹ng tÆ°á»›i tiÃªu, xáº£y ra lá»—i HTTP 404 tá»« WMS endpoint
+**Kết quả thực tế:**
+- ✅ Bản đồ container tải thành công
+- ✅ Công cụ Zoom In, Zoom Out hiển thị và hoạt động
+- ✅ Công cụ Đo lường (Measure) và Định vị (Locate) hiển thị
+- ✅ Thông tin người dùng "Đỗ Thành Long" hiển thị trên thanh công cụ
+- ❌ **Lỗi 404 WMS**: Khi bản đồ cố gắng tải lớp dữ liệu vùng tưới tiêu, xảy ra lỗi HTTP 404 từ WMS endpoint
 
-> [!CAUTION]
-> **Lá»—i BUG-001 (Critical)**: Lá»—i 404 tÃ i nguyÃªn WMS báº£n Ä‘á»“ vÃ¹ng tÆ°á»›i tiÃªu.
-> - **URL lá»—i**: `https://thuyloi.opengis.vn/m/qsrv/.../bentre_vungtuoitieu_v2?SERVICE=WMS&REQUEST=GetLegendGraphic...`
-> - **Má»©c Ä‘á»™**: NghiÃªm trá»ng â€“ lá»›p dá»¯ liá»‡u vÃ¹ng tÆ°á»›i tiÃªu khÃ´ng hiá»ƒn thá»‹ Ä‘Æ°á»£c, áº£nh hÆ°á»Ÿng trá»±c tiáº¿p Ä‘áº¿n chá»©c nÄƒng cá»‘t lÃµi cá»§a há»‡ thá»‘ng.
+> **🔴 Lỗi BUG-001 (Critical)**: Lỗi 404 tài nguyên WMS bản đồ vùng tưới tiêu.
+> - **URL lỗi**: `https://thuyloi.opengis.vn/m/qsrv/.../bentre_vungtuoitieu_v2?SERVICE=WMS&REQUEST=GetLegendGraphic...`
+> - **Mức độ**: Nghiêm trọng – lớp dữ liệu vùng tưới tiêu không hiển thị được, ảnh hưởng trực tiếp đến chức năng cốt lõi của hệ thống.
 
-**áº¢nh mÃ n hÃ¬nh:**
+**Ảnh màn hình:**
 
-![Báº£n Ä‘á»“ sau Ä‘Äƒng nháº­p](screenshots/map_page_after_login_1781509311275.png)
+![Bản đồ sau đăng nhập](screenshots/map_page_after_login_1781509311275.png)
 
 ---
 
-### TC-005: Kiá»ƒm tra Äiá»u HÆ°á»›ng Menu ChÃ­nh
+### TC-005: Kiểm tra Điều Hướng Menu Chính
 
 | | |
 |---|---|
-| **Má»©c Ä‘á»™ Æ°u tiÃªn** | High |
-| **URL kiá»ƒm thá»­** | https://thuyloi.opengis.vn/map/view/ |
-| **Káº¿t quáº£** | âŒ **FAIL (Tab Tin Tá»©c khÃ´ng hoáº¡t Ä‘á»™ng)** |
+| **Mức độ ưu tiên** | High |
+| **URL kiểm thử** | https://thuyloi.opengis.vn/map/view/ |
+| **Kết quả** | ❌ **FAIL (Tab Tin Tức không hoạt động)** |
 
-**MÃ´ táº£:** Kiá»ƒm tra táº¥t cáº£ cÃ¡c tab/menu chÃ­nh trÃªn thanh Ä‘iá»u hÆ°á»›ng hoáº¡t Ä‘á»™ng Ä‘Ãºng vÃ  chuyá»ƒn hÆ°á»›ng Ä‘Ãºng trang.
+**Mô tả:** Kiểm tra tất cả các tab/menu chính trên thanh điều hướng hoạt động đúng và chuyển hướng đúng trang.
 
-**CÃ¡c bÆ°á»›c thá»±c hiá»‡n:**
-1. Quan sÃ¡t thanh menu trÃªn trang báº£n Ä‘á»“
-2. Click vÃ o tá»«ng tab: Tin tá»©c, Báº£n Ä‘á»“, Quáº£n trá»‹
+**Các bước thực hiện:**
+1. Quan sát thanh menu trên trang bản đồ
+2. Click vào từng tab: Tin tức, Bản đồ, Quản trị
 
-**Káº¿t quáº£ thá»±c táº¿:**
-- âœ… Tab **"Báº£n Ä‘á»“"** hoáº¡t Ä‘á»™ng Ä‘Ãºng (href: `../../map/`)
-- âœ… Tab **"Quáº£n trá»‹"** hoáº¡t Ä‘á»™ng Ä‘Ãºng (href: `../../dashboard`)
-- âŒ Tab **"Tin tá»©c"** trÃªn trang báº£n Ä‘á»“/quáº£n trá»‹ **khÃ´ng cÃ³ link hoáº·c sá»± kiá»‡n click hoáº¡t Ä‘á»™ng** â€“ click vÃ o khÃ´ng cÃ³ pháº£n há»“i, khÃ´ng Ä‘iá»u hÆ°á»›ng Ä‘áº¿n trang tin tá»©c
+**Kết quả thực tế:**
+- ✅ Tab **"Bản đồ"** hoạt động đúng (href: `../../map/`)
+- ✅ Tab **"Quản trị"** hoạt động đúng (href: `../../dashboard`)
+- ❌ Tab **"Tin tức"** trên trang bản đồ/quản trị **không có link hoặc sự kiện click hoạt động** – click vào không có phản hồi, không điều hướng đến trang tin tức
 
-> [!CAUTION]
-> **Lá»—i BUG-002 (High)**: Tab "Tin tá»©c" trong thanh Ä‘iá»u hÆ°á»›ng táº¡i trang báº£n Ä‘á»“ (`/map/view/`) vÃ  trang quáº£n trá»‹ (`/dashboard/`) khÃ´ng hoáº¡t Ä‘á»™ng. Thuá»™c tÃ­nh `href` bá»‹ thiáº¿u hoáº·c sá»± kiá»‡n click khÃ´ng Ä‘Æ°á»£c gÃ¡n Ä‘Ãºng.
+> **🟠 Lỗi BUG-002 (High)**: Tab "Tin tức" trong thanh điều hướng tại trang `/map/view/` và `/dashboard/` không hoạt động. Thuộc tính `href` bị thiếu hoặc sự kiện click không được gán đúng.
 
 ---
 
-### TC-006: Kiá»ƒm tra Trang Quáº£n Trá»‹ (Dashboard)
+### TC-006: Kiểm tra Trang Quản Trị (Dashboard)
 
 | | |
 |---|---|
-| **Má»©c Ä‘á»™ Æ°u tiÃªn** | High |
-| **URL kiá»ƒm thá»­** | https://thuyloi.opengis.vn/dashboard/main/ |
-| **Káº¿t quáº£** | âœ… **PASS** |
+| **Mức độ ưu tiên** | High |
+| **URL kiểm thử** | https://thuyloi.opengis.vn/dashboard/main/ |
+| **Kết quả** | ✅ **PASS** |
 
-**MÃ´ táº£:** Kiá»ƒm tra trang quáº£n trá»‹ há»‡ thá»‘ng táº£i Ä‘Ãºng, hiá»ƒn thá»‹ Ä‘áº§y Ä‘á»§ cÃ¡c module quáº£n lÃ½.
+**Mô tả:** Kiểm tra trang quản trị hệ thống tải đúng, hiển thị đầy đủ các module quản lý.
 
-**CÃ¡c bÆ°á»›c thá»±c hiá»‡n:**
-1. Äiá»u hÆ°á»›ng Ä‘áº¿n trang dashboard
-2. Quan sÃ¡t cÃ¡c module hiá»ƒn thá»‹
-3. Kiá»ƒm tra console logs
+**Các bước thực hiện:**
+1. Điều hướng đến trang dashboard
+2. Quan sát các module hiển thị
+3. Kiểm tra console logs
 
-**Káº¿t quáº£ thá»±c táº¿:**
-- âœ… Trang táº£i thÃ nh cÃ´ng, chuyá»ƒn hÆ°á»›ng sang: `https://thuyloi.opengis.vn/dashboard/main/`
-- âœ… TiÃªu Ä‘á»: "Quáº£n trá»‹ há»‡ thá»‘ng | Thá»§y lá»£i Báº¿n Tre"
-- âœ… Báº£ng Ä‘iá»u khiá»ƒn hiá»ƒn thá»‹ Ä‘áº§y Ä‘á»§ cÃ¡c module:
-  - Quáº£n lÃ½ ngÆ°á»i dÃ¹ng
-  - Cá»‘ng Ä‘iá»u tiáº¿t
-  - Há»‡ thá»‘ng kÃªnh dáº«n
-  - Dá»¯ liá»‡u thá»§y vÄƒn (má»±c nÆ°á»›c, Ä‘á»™ máº·n)
+**Kết quả thực tế:**
+- ✅ Trang tải thành công, chuyển hướng sang: `https://thuyloi.opengis.vn/dashboard/main/`
+- ✅ Tiêu đề: "Quản trị hệ thống | Thủy lợi Bến Tre"
+- ✅ Bảng điều khiển hiển thị đầy đủ các module:
+  - Quản lý người dùng
+  - Cống điều tiết
+  - Hệ thống kênh dẫn
+  - Dữ liệu thủy văn (mực nước, độ mặn)
 
-**áº¢nh mÃ n hÃ¬nh:**
+**Ảnh màn hình:**
 
-![Trang quáº£n trá»‹ Dashboard](screenshots/dashboard_page_load_1781509368956.png)
+![Trang quản trị Dashboard](screenshots/dashboard_page_load_1781509368956.png)
 
 ---
 
-### TC-007: Kiá»ƒm tra Trang Tin Tá»©c
+### TC-007: Kiểm tra Trang Tin Tức
 
 | | |
 |---|---|
-| **Má»©c Ä‘á»™ Æ°u tiÃªn** | Medium |
-| **URL kiá»ƒm thá»­** | https://thuyloi.opengis.vn/category/tin-tuc/ |
-| **Káº¿t quáº£** | âœ… **PASS** |
+| **Mức độ ưu tiên** | Medium |
+| **URL kiểm thử** | https://thuyloi.opengis.vn/category/tin-tuc/ |
+| **Kết quả** | ✅ **PASS** |
 
-**MÃ´ táº£:** Kiá»ƒm tra trang tin tá»©c hiá»ƒn thá»‹ danh sÃ¡ch bÃ i viáº¿t vÃ  cÃ´ng cá»¥ tÃ¬m kiáº¿m.
+**Mô tả:** Kiểm tra trang tin tức hiển thị danh sách bài viết và công cụ tìm kiếm.
 
-**CÃ¡c bÆ°á»›c thá»±c hiá»‡n:**
-1. Äiá»u hÆ°á»›ng trá»±c tiáº¿p Ä‘áº¿n trang tin tá»©c
-2. Quan sÃ¡t danh sÃ¡ch bÃ i viáº¿t
-3. Kiá»ƒm tra sidebar tÃ¬m kiáº¿m
-4. Kiá»ƒm tra console logs
+**Các bước thực hiện:**
+1. Điều hướng trực tiếp đến trang tin tức
+2. Quan sát danh sách bài viết
+3. Kiểm tra sidebar tìm kiếm
 
-**Káº¿t quáº£ thá»±c táº¿:**
-- âœ… Trang táº£i thÃ nh cÃ´ng
-- âœ… TiÃªu Ä‘á»: "Tin tá»©c â€“ Thá»§y lá»£i Báº¿n Tre"
-- âœ… Danh sÃ¡ch bÃ i viáº¿t tin tá»©c vÃ  cáº£nh bÃ¡o xÃ¢m nháº­p máº·n hiá»ƒn thá»‹ Ä‘áº§y Ä‘á»§
-- âœ… Cá»™t tÃ¬m kiáº¿m bÃªn pháº£i hoáº¡t Ä‘á»™ng
-- âš ï¸ Console warnings: LiÃªn quan Ä‘áº¿n Google Maps API táº£i Ä‘á»“ng bá»™ (`loading=async`) vÃ  Cross-Origin iframe tá»« Google Data Studio (khÃ´ng áº£nh hÆ°á»Ÿng chá»©c nÄƒng chÃ­nh)
+**Kết quả thực tế:**
+- ✅ Trang tải thành công
+- ✅ Tiêu đề: "Tin tức – Thủy lợi Bến Tre"
+- ✅ Danh sách bài viết tin tức và cảnh báo xâm nhập mặn hiển thị đầy đủ
+- ✅ Cột tìm kiếm bên phải hoạt động
+- ⚠️ Console warnings: Liên quan đến Google Maps API và Cross-Origin iframe từ Google Data Studio (không ảnh hưởng chức năng chính)
 
-**áº¢nh mÃ n hÃ¬nh:**
+**Ảnh màn hình:**
 
-![Trang tin tá»©c](screenshots/news_page_load_1781509394415.png)
+![Trang tin tức](screenshots/news_page_load_1781509394415.png)
 
 ---
 
-### TC-008: Kiá»ƒm tra Responsive Design
+### TC-008: Kiểm tra Responsive Design (Mobile View)
 
 | | |
 |---|---|
-| **Má»©c Ä‘á»™ Æ°u tiÃªn** | Medium |
-| **URL kiá»ƒm thá»­** | https://thuyloi.opengis.vn/ |
-| **Káº¿t quáº£** | âš ï¸ **KhÃ´ng thá»ƒ kiá»ƒm tra Ä‘áº§y Ä‘á»§ (giá»›i háº¡n mÃ´i trÆ°á»ng)** |
+| **Mức độ ưu tiên** | Medium |
+| **URL kiểm thử** | https://thuyloi.opengis.vn/ |
+| **Kết quả** | ⚠️ **Kiểm tra một phần** |
 
-**MÃ´ táº£:** Kiá»ƒm tra trang web hiá»ƒn thá»‹ Ä‘Ãºng trÃªn thiáº¿t bá»‹ di Ä‘á»™ng (kÃ­ch thÆ°á»›c 375x667px).
+**Mô tả:** Kiểm tra trang web hiển thị đúng trên thiết bị di động (kích thước 375x667px).
 
-**Káº¿t quáº£ thá»±c táº¿:**
-- âš ï¸ MÃ´i trÆ°á»ng kiá»ƒm thá»­ khÃ³a cá»‘ Ä‘á»‹nh viewport á»Ÿ `1920x953` px
-- âœ… MÃ£ nguá»“n HTML cÃ³ pháº§n tá»­ `menu-mobile-toggle` â€“ cho tháº¥y thiáº¿t káº¿ Ä‘Ã£ chuáº©n bá»‹ cho responsive layout
-- âœ… CÃ³ nÃºt hamburger menu dÃ nh cho mobile trong source code
+**Kết quả thực tế:**
+- ⚠️ Môi trường kiểm thử cố định viewport `1920x953` px
+- ✅ Mã nguồn HTML có phần tử `menu-mobile-toggle` – thiết kế đã chuẩn bị cho responsive layout
+- ✅ Có nút hamburger menu dành cho mobile trong source code
 
-**áº¢nh mÃ n hÃ¬nh:**
+**Ảnh màn hình:**
 
-![Kiá»ƒm tra Mobile View](screenshots/homepage_mobile_view_1781509412649.png)
+![Kiểm tra Mobile View](screenshots/homepage_mobile_view_1781509412649.png)
 
 ---
 
-## III. Tá»”NG Há»¢P Lá»–I ÄÃƒ PHÃT HIá»†N
+## III. TỔNG HỢP LỖI ĐÃ PHÁT HIỆN
 
-| ID Lá»—i | Má»©c Ä‘á»™ | Vá»‹ trÃ­ | MÃ´ táº£ | TÃ¡c Ä‘á»™ng |
+| ID Lỗi | Mức độ | Vị trí | Mô tả | Tác động |
 |--------|--------|--------|--------|----------|
-| **BUG-001** | ðŸ”´ Critical | Trang Báº£n Äá»“ `/map/view/` | Lá»—i 404 WMS khi táº£i lá»›p dá»¯ liá»‡u vÃ¹ng tÆ°á»›i tiÃªu `bentre_vungtuoitieu_v2` | Lá»›p dá»¯ liá»‡u quan trá»ng khÃ´ng hiá»ƒn thá»‹ trÃªn báº£n Ä‘á»“ |
-| **BUG-002** | ðŸŸ  High | Thanh Ä‘iá»u hÆ°á»›ng (Map & Dashboard) | Tab "Tin tá»©c" khÃ´ng cÃ³ `href` hoáº·c sá»± kiá»‡n click â€“ click khÃ´ng cÃ³ pháº£n há»“i | NgÆ°á»i dÃ¹ng khÃ´ng thá»ƒ Ä‘iá»u hÆ°á»›ng Ä‘áº¿n trang tin tá»©c tá»« cÃ¡c trang ná»™i bá»™ |
-| **UX-001** | ðŸŸ¡ Medium | Trang ÄÄƒng nháº­p `/map/login/` | Form Ä‘Äƒng nháº­p bá»‹ áº©n theo dáº¡ng Accordion, ngÆ°á»i dÃ¹ng pháº£i click mÅ©i tÃªn má»›i tháº¥y | Giáº£m tráº£i nghiá»‡m ngÆ°á»i dÃ¹ng, cÃ³ thá»ƒ lÃ m ngÆ°á»i dÃ¹ng má»›i bá» cuá»™c |
+| **BUG-001** | 🔴 Critical | `/map/view/` | Lỗi 404 WMS – Lớp bản đồ vùng tưới tiêu `bentre_vungtuoitieu_v2` không tải được | Lớp dữ liệu quan trọng không hiển thị trên bản đồ |
+| **BUG-002** | 🟠 High | Thanh menu (Map & Dashboard) | Tab "Tin tức" click không phản hồi, thiếu `href` hoặc sự kiện click | Người dùng không thể điều hướng đến trang tin tức từ các trang nội bộ |
+| **UX-001** | 🟡 Medium | `/map/login/` | Form đăng nhập bị ẩn mặc định theo dạng Accordion | Giảm trải nghiệm người dùng, người dùng mới có thể bỏ cuộc |
 
 ---
 
-## IV. KHUYáº¾N NGHá»Š
+## IV. KHUYẾN NGHỊ
 
-1. **BUG-001 (Æ¯u tiÃªn cao nháº¥t)**: Kiá»ƒm tra vÃ  khÃ´i phá»¥c endpoint WMS `bentre_vungtuoitieu_v2`. ÄÃ¢y lÃ  lá»—i nghiÃªm trá»ng áº£nh hÆ°á»Ÿng Ä‘áº¿n chá»©c nÄƒng cá»‘t lÃµi cá»§a há»‡ thá»‘ng WebGIS.
+1. **BUG-001 (Ưu tiên cao nhất):** Kiểm tra và khôi phục endpoint WMS `bentre_vungtuoitieu_v2`. Đây là lỗi nghiêm trọng ảnh hưởng đến chức năng cốt lõi của hệ thống WebGIS.
 
-2. **BUG-002 (Æ¯u tiÃªn cao)**: ThÃªm `href` Ä‘Ãºng hoáº·c sá»± kiá»‡n JavaScript cho tab "Tin tá»©c" trÃªn thanh Ä‘iá»u hÆ°á»›ng táº¡i cÃ¡c trang ná»™i bá»™ (`/map/view/` vÃ  `/dashboard/`).
+2. **BUG-002 (Ưu tiên cao):** Thêm `href` đúng hoặc sự kiện JavaScript cho tab "Tin tức" trên thanh điều hướng tại các trang nội bộ (`/map/view/` và `/dashboard/`).
 
-3. **UX-001 (Cáº£i thiá»‡n UX)**: Xem xÃ©t hiá»ƒn thá»‹ form Ä‘Äƒng nháº­p má»Ÿ rá»™ng máº·c Ä‘á»‹nh, hoáº·c thÃªm hÆ°á»›ng dáº«n rÃµ rÃ ng hÆ¡n Ä‘á»ƒ ngÆ°á»i dÃ¹ng biáº¿t cÃ¡ch Ä‘Äƒng nháº­p.
-
----
-
-## V. VIDEO GHI HÃŒNH KIá»‚M THá»¬
-
-![Video kiá»ƒm thá»­](screenshots/thuyloi_testing_session_1781495490259.webp)
+3. **UX-001 (Cải thiện UX):** Xem xét hiển thị form đăng nhập mở rộng mặc định, hoặc thêm hướng dẫn rõ ràng hơn để người dùng biết cách đăng nhập.
 
 ---
 
-*BÃ¡o cÃ¡o Ä‘Æ°á»£c táº¡o tá»± Ä‘á»™ng bá»Ÿi AI Tester - Antigravity IDE | NgÃ y: 15/06/2026*
+## V. VIDEO GHI HÌNH KIỂM THỬ
+
+![Video kiểm thử toàn bộ phiên](screenshots/thuyloi_testing_session_1781495490259.webp)
+
+---
+
+*Báo cáo được tạo tự động bởi AI Tester – Antigravity IDE | Ngày: 15/06/2026*
