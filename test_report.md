@@ -250,7 +250,7 @@
 
 ---
 
-## III. TỔNG HỢP LỖI ĐÃ PHÁT HIỆN
+## III. TỔNG HỢP LỖI ĐÃ PHÁT HIỆN fdg
 
 | ID Lỗi | Mức độ | Vị trí | Mô tả | Tác động |
 |--------|--------|--------|--------|----------|

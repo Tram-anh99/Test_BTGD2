@@ -11,8 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-
-# Setup screenshot directory jhjihj
+# Setup screenshot directory 
 ARTIFACT_DIR = r"C:\Users\Admin\.gemini\antigravity-ide\brain\eb44a9f1-0ed0-4823-8286-0b39cb7feced"
 SCREENSHOT_DIR = os.path.join(ARTIFACT_DIR, "screenshots")
 if not os.path.exists(SCREENSHOT_DIR):
